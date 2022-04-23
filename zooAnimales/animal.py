@@ -20,13 +20,13 @@ class Animal:
         from zooAnimales.pez import Pez
         from zooAnimales.reptil import Reptil
 
-        return f"""Mamiferos: {Mamifero.cantidadMamiferos()}
-        Aves: {Ave.cantidadAves()}
-        Reptiles: {Reptil.cantidadReptiles()}
-        Peces: {Pez.cantidadPeces()}
-        Anfibios: {Anfibio.cantidadAnfibios()}"""
+        return f"""Mamiferos : {Mamifero.cantidadMamiferos()}\n
+        Aves : {Ave.cantidadAves()}\n
+        Reptiles : {Reptil.cantidadReptiles()}\n
+        Peces : {Pez.cantidadPeces()}\n
+        Anfibios : {Anfibio.cantidadAnfibios()}"""
 
-    def __str__(self):
+    def toString(self):
         if (self._zona):
             return f"Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi genero es {self.getGenero()}, la zona en la que me ubico es {self.getZona()}, en el {self.getZona().getZoo()}" 
         else:

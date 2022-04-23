@@ -1,5 +1,4 @@
-from turtle import color
-import Animal
+from animal import Animal
 
 class Pez(Animal):
     listado = []

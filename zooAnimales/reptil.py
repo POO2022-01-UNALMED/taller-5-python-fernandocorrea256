@@ -1,4 +1,4 @@
-import Animal
+from animal import Animal
 
 class Reptil(Animal):
     listado = []
@@ -27,7 +27,7 @@ class Reptil(Animal):
     def crearSerpiente(nombre, edad, genero):
         Reptil.serpientes += 1
         return Reptil(nombre, edad, "jungla", genero, "blanco", 1)
-        
+
 
     # SETTERS
     def setColorEscamas(self, colorEscamas):

@@ -1,4 +1,8 @@
-import Ave, Reptil, Mamifero, Anfibio, Pez
+from anfibio import Anfibio
+from ave import Ave
+from mamifero import Mamifero
+from pez import Pez
+from reptil import Reptil
 
 class Animal:
     def __init__(self, nombre, edad, habitat, genero, zona=None):

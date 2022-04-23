@@ -1,16 +1,12 @@
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.ave import Ave
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.pez import Pez
-from zooAnimales.reptil import Reptil
-
 class Animal:
+    totalAnimales = 0
     def __init__(self, nombre, edad, habitat, genero, zona=None):
         self._nombre = nombre
         self._edad = edad
         self._habitat = habitat
         self._genero = genero
         self._zona = zona
+        totalAnimales += 1
 
     # METHODS
     def movimiento(self):
@@ -18,6 +14,12 @@ class Animal:
 
     @staticmethod
     def totalPorTipo():
+        from anfibio import Anfibio
+        from ave import Ave
+        from mamifero import Mamifero
+        from pez import Pez
+        from reptil import Reptil
+        
         return f"""Mamiferos: {Mamifero.cantidadMamiferos()}
         Aves: {Ave.cantidadAves()}
         Reptiles: {Reptil.cantidadReptiles()}

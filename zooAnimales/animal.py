@@ -6,7 +6,7 @@ class Animal:
         self._habitat = habitat
         self._genero = genero
         self._zona = zona
-        totalAnimales += 1
+        Animal.totalAnimales += 1
 
     # METHODS
     def movimiento(self):
